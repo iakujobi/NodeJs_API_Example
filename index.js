@@ -37,7 +37,7 @@ app.post('/callAddPerson', function (postmanRequest, postmanResponse)
     // Saving our incoming request into a const called body
     const body = postmanRequest.body
 
-    // Input to axios.post
+    // Input to axios.post. Send post request to 'https://java-sample-api-2020.herokuapp.com/addPerson' too
     axios.post('https://java-sample-api-2020.herokuapp.com/addPerson', body)
         .then(function (apiResponse)
         {
