@@ -13,7 +13,6 @@ app.use(express.json()) // We cannot read incoming requests when we call our api
 // or send a GET request to localhost:8080/hello using postman
 app.get('/hello', function (req, res)
 {
-
     // Send a message as a response to the request
     res.send('Hello world!')
 })
